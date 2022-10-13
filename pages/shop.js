@@ -32,7 +32,7 @@ function shop() {
                             <h1 className='md:text-3xl text-2xl my-4 text-center'>{data.Name}</h1>
                             <h1 className='my-4 text-center md:text-xl'>₹{data.Price}</h1>
                             <h1 className='my-4 text-center md:text-xl'><strong>Origin: </strong>{data.Origin}</h1>
-                            <Link href={`/nightMarket/${data.id}`}><button className='my-4 button px-4 py-3 rounded-md block mx-auto'>Discover</button></Link>
+                            <Link href={`/product/${data.id}`}><button className='my-4 button px-4 py-3 rounded-md block mx-auto'>Discover</button></Link>
                         </div>
                     )
                 })}
