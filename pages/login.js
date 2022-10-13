@@ -42,16 +42,6 @@ function login() {
             router.reload()
     }
 
-    const databaseRef =  collection(database, 'Users')
-
-    const addData = () => {
-        addDoc(databaseRef, {
-            name: sessionStorage.getItem('Name'),
-            pfp: sessionStorage.getItem('PFP'),
-            email: sessionStorage.getItem('Email'),
-        })
-    }
-
     return(
         <ContainerBlock title={token ? sessionStorage.getItem('Name') : 'Login'}>
             <style jsx>{`
