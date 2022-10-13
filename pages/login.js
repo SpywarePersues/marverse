@@ -3,7 +3,6 @@ import { app, database } from "../firebaseConfig";
 import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from 'firebase/auth'
 import { useRouter as UseRouter } from "next/router";
 import ContainerBlock from '../components/ContainerBlock'
-import { addDoc, collection } from "firebase/firestore";
 
 function login() {
     const [token, setToken] = UseState("")
