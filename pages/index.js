@@ -9,7 +9,7 @@ export default function Home() {
         <div className='glassmorph mt-6 p-6 w-10/12 mx-auto rounded-lg'>
           <h1 className='text-5xl text-center mt-10'>Captain America&apos;s <span className='text-red-500'>Shield</span></h1>
           <p className='text-center mx-auto w-[55rem] pt-6 text-xl'>The shield...It&apos;s just love 💖, Well...did you know you can also buy it! It would be so cool to get a shield like captain america...just don&apos;t use it for bad things :D </p>
-          <button className='button py-3 px-5 rounded-md mx-auto block mt-6'><a href='/nightMarket/captain-america-shield'>Discover</a></button>
+          <button className='button py-3 px-5 rounded-md mx-auto block mt-6'><a href='/items/captain-america-shield'>Discover</a></button>
         </div>
       </div>
     </ContainerBlock>
