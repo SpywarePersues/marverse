@@ -55,7 +55,7 @@ function login() {
                         <img className="rounded-full border-solid border-4 border-green-600"  src={sessionStorage.getItem("PFP")} style={{width:"200px"}}/>
                     </div>  
                     <div className="px-10">
-                        <p>Hello, {sessionStorage.getItem("Name")}</p>
+                        <p>Howdy, {sessionStorage.getItem("Name")}</p>
                         <p className="pt-2">Welcome to Marverse.</p>
                         <button className="text-center button px-4 py-3 rounded-md mt-4 lg:ml-10" onClick={manageSignOut}>Logout</button>
                     </div>
