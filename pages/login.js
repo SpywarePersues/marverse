@@ -60,7 +60,7 @@ function login() {
                         <button className="text-center button px-4 py-3 rounded-md mt-4 lg:ml-10" onClick={manageSignOut}>Logout</button>
                     </div>
                 </div>
-            ) : (<div><h1 className='text-5xl text-center pb-5 pt-5 wonderful-text font-semibold'>Creators</h1>
+            ) : (<div><h1 className='text-5xl text-center pb-5 pt-5 wonderful-text font-semibold'>Login</h1>
             <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14">
             <div class="rounded overflow-hidden shadow-lg green-glassmorph">
             <img class="w-24 block mx-auto my-auto mt-5 mb-2 rounded-full border-solid border-green-600 border-4" src="https://cdn.discordapp.com/attachments/910730837996224584/1028238445778309171/media_discordapp_net-unknown_1.png" alt="Google" />
