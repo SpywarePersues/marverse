@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {AiFillStar} from 'react-icons/ai'
 import {BsArrowRight, BsArrowLeft} from 'react-icons/bs'
 import React, { useEffect as UseEffect, useState as UseState } from 'react'
@@ -59,7 +60,7 @@ export default function ProductsSlider(){
                     firedata.map((data) => {
                         return(
                             <div key={data.id} className="glassmorph inline-block p-2 cursor-pointer w-64 lg:w-96 mx-3">
-                                <img src={data.Image} className="w-15 lg:w-screen lg:px-10 mx-auto h-32" alt=""/>
+                                <img src={data.Image} className="w-15 lg:w-screen lg:px-10 mx-auto h-40 my-4" alt=""/>
                                 <div className="font-Koho px-5">
                                     <p className='py-5'>{data.Name}</p>
                                     <div className="flex justify-between">
