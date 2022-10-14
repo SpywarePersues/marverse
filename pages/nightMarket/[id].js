@@ -12,7 +12,7 @@ function nightMarketScreen() {
 
     return (
         <ContainerBlock>
-            <h1>Page no: {id}</h1>
+            
         </ContainerBlock>
     )
 }
