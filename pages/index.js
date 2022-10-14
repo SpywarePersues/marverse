@@ -14,7 +14,7 @@ export default function Home() {
       setTimeout(() => {
         setMounted(true)
       })
-    }, 12000);
+    }, 3700);
 
     return () => clearTimeout(timeout);
     
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </ContainerBlock>
         :
-        <video autoPlay className='w-screen mx-auto'>
+        <video autoPlay className='w-screen h-screen mx-auto bg-black'>
           <source src="./intro.mp4" />
         </video>
       }
