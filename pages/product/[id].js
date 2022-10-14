@@ -10,9 +10,45 @@ function productsScreen() {
     const router = UseRouter()
     const { id } = router.query;
 
+    const databaseRef = collection(database, 'Product')
+    const [firedata, setFiredata] = UseState([])
+    const [currentData, setCurrentData] = UseState({})
+
+    UseEffect(() => {
+        getData()
+    }, [])
+
+    const htmlJSX = (
+        <div>
+            {currentData.Name}
+        </div>
+    )
+
+    const getData = async () => {
+        await getDocs(databaseRef)
+        .then((response) => {
+            setFiredata(response.docs.map((data) => {
+                return {...data.data(), id: data.id}
+            }))
+        })
+    }
+
+    UseEffect(() =>{
+        firedata.map((data) => {
+            if(data.id == id){
+                setCurrentData(data)
+            }
+        })
+
+
+    
+    }, [firedata])
+
+    console.log(currentData)
+
     return (
-        <ContainerBlock>
-            <h1>Page no: {id}</h1>
+        <ContainerBlock title={currentData.Name}>
+            {htmlJSX}
         </ContainerBlock>
     )
 }

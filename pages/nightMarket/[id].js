@@ -19,7 +19,9 @@ function nightMarketScreen() {
     }, [])
 
     const htmlJSX = (
-        <div>{currentData.Name}</div>
+        <div>
+            {currentData.Name}
+        </div>
     )
 
     const getData = async () => {
@@ -45,7 +47,7 @@ function nightMarketScreen() {
     console.log(currentData)
 
     return (
-        <ContainerBlock>
+        <ContainerBlock title={currentData.Name}>
             {htmlJSX}
         </ContainerBlock>
     )
