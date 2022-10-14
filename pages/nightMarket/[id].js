@@ -12,7 +12,7 @@ function nightMarketScreen() {
 
     const databaseRef = collection(database, 'Night Market')
     const [firedata, setFiredata] = UseState([])
-    const [currentData, setCurrentData] = useState({})
+    const [currentData, setCurrentData] = UseState({})
 
     UseEffect(() => {
         getData()
@@ -31,7 +31,7 @@ function nightMarketScreen() {
         })
     }
 
-    useEffect(() =>{
+    UseEffect(() =>{
         firedata.map((data) => {
             if(data.id == id){
                 setCurrentData(data)
