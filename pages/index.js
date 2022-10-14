@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import ContainerBlock from '../components/ContainerBlock'
 import ProductsSlider from '../components/ProductSlider'
+import LoadScreenContainerBlock from '../components/LoadScreenContainerBlock'
 
 export default function Home() {
 
@@ -42,9 +43,11 @@ export default function Home() {
           </div>
         </ContainerBlock>
         :
-        <video autoPlay muted className='w-screen h-screen mx-auto bg-black'>
+        <LoadScreenContainerBlock>
+        <video autoPlay muted className='w-screen h-screen mx-auto'>
           <source src="./intro.mp4" />
         </video>
+        </LoadScreenContainerBlock>
       }
     </div>
   )

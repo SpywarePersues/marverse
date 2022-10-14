@@ -24,12 +24,12 @@ function infinityStones() {
     return (
         <ContainerBlock title="Sale">
             <h1 className='py-10 text-5xl text-center text-gray-300'>Sale will me live next <span className='font-bold'>Full Moon</span></h1>
-                <div className='flex flex-wrap justify-center'>
+                <div className='flex flex-wrap justify-center mb-10'>
                     {firedata.map((data) => {
                         return(
-                            <div href={`/stones/${data.id}`} key={data.id} className="glassmorph w-4/12 mx-10">
+                            <a href={`/sale/${data.id}`} key={data.id} className="glassmorph w-4/12 mx-10">
                                 <img src={data.Image} className="w-screen lg:w-[46rem] border-solid border-slate-600 border-4 rounded-md" alt='' />
-                            </div>
+                            </a>
                         )
                     })}
                 </div>
