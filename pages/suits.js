@@ -31,7 +31,6 @@ function ironmanSuits() {
                             <img src={data.Image} className="w-[46rem] border-solid border-slate-600 border-4 rounded-md" alt='' />
                             <h1 className='md:text-3xl text-2xl my-4 text-center'>{data.Name}</h1>
                             <h1 className='my-4 text-center md:text-xl'>${data.Price}</h1>
-                            <h1 className='my-4 text-center md:text-xl'><strong>Origin: </strong>{data.Origin}</h1>
                             <Link href={`/checkout/suits`}><button className='my-4 button px-4 py-3 rounded-md block mx-auto'>Buy Now</button></Link>
                         </a>
                     )
