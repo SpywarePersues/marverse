@@ -23,7 +23,13 @@ function infinityStones() {
     }
     return (
         <ContainerBlock title="Sale">
-            <h1 className='py-10 text-5xl text-center text-gray-300'>Sale will me live next <span className='font-bold'>Full Moon</span></h1>
+            <div className='bg-[url("../public/moon.jpg")] py-10 bg-cover mb-10'>
+            <h1 className='py-5 mb-5 lg:text-5xl text-center text-gray-100 glassmorph'><span className='font-bold'>SALE</span> will be live this <span className='font-bold'>FULL MOON</span></h1>
+                <video autoPlay loop className='w-11/12 lg:w-5/12 mx-auto mb-5'>
+                    <source src='./moon.mp4' />
+                </video>
+            </div>
+            
                 <div className='flex flex-wrap justify-center'>
                     {firedata.map((data) => {
                         return(
