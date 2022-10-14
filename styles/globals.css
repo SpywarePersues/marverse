@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo&family=Marvel:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,6 +36,11 @@ a {
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
   border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+.bg-blur{
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
 }
 
 .blue-glassmorph{

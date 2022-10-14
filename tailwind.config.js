@@ -6,6 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      "koho" : 'KoHo',
+      "marvel" : 'Marvel',
+    }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+    // ...
+  ]
 }

@@ -1,18 +1,51 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import ContainerBlock from '../components/ContainerBlock'
+import ProductsSlider from '../components/ProductSlider'
 
 export default function Home() {
+
+  const [mounted, setMounted] = useState(false)
+  
+  useEffect(() => {
+
+    const timeout = setTimeout(() => {
+      setTimeout(() => {
+        setMounted(true)
+      })
+    }, 12000);
+
+    return () => clearTimeout(timeout);
+    
+  }, [])
+
+
   return (
-    <ContainerBlock>
-      <div className='my-10'>
-        <img src='https://cdn.discordapp.com/attachments/910730837996224584/1029971331627876423/unknown.png' alt='' className='opacity-70 rounded-lg w-11/12 mx-auto border-4 border-neutral-600 border-solid' />
-        <div className='glassmorph mt-6 p-6 w-10/12 mx-auto rounded-lg'>
-          <h1 className='text-5xl text-center mt-10'>Captain America&apos;s <span className='text-red-500'>Shield</span></h1>
-          <p className='text-center mx-auto w-[55rem] pt-6 text-xl'>The shield...It&apos;s just love 💖, Well...did you know you can also buy it! It would be so cool to get a shield like captain america...just don&apos;t use it for bad things :D </p>
-          <button className='button py-3 px-5 rounded-md mx-auto block mt-6'><Link href='/product/product2'>Discover</Link></button>
-        </div>
-      </div>
-    </ContainerBlock>
+    <div>
+      {
+        mounted ? 
+        <ContainerBlock>
+          <div>
+            <div className='flex justify-around lg:9/12 lg:pt-24 mx-auto bg-[url("https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80")] bg-cover '>
+              <div className='lg:w-5/12 mx-auto font-bold lg:text-8xl font-koho flex flex-col justify-center bg-[url("https://i.pinimg.com/originals/1f/2d/90/1f2d9088ff0c68825dc00096820313ff.png")] py-24 bg-cover text-center text-gray-900'> 
+                Are You The Worthy One?
+                <p></p>
+              </div>
+            </div>
+            <div className='text-center font-marvel lg:text-6xl pt-10'>
+              A collection of <span className='text-red-500'>Premium Marvel products</span>
+            </div>
+            <div className='my-10'>
+              <ProductsSlider></ProductsSlider>
+            </div>
+          </div>
+        </ContainerBlock>
+        :
+        <video autoPlay className='w-screen mx-auto'>
+          <source src="./intro.mp4" />
+        </video>
+      }
+    </div>
   )
 }
