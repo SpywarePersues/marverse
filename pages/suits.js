@@ -24,7 +24,7 @@ function ironmanSuits() {
     return (
         <ContainerBlock title="Suits">
             <h1 className='text-5xl text-center my-6'>Suits</h1>
-            <div className='my-10 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5'>
+            <div href={`/suits/${data.id}`} className='my-10 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5'>
                 {firedata.map((data) => {
                     return(
                         <a href={`/suits/${data.id}`} key={data.id} className="glassmorph md:mx-16 mx-6 w-[18rem] lg:w-[26rem] xl:w-[35rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
