@@ -27,7 +27,7 @@ function shop() {
             <div href={`/product/${data.id}`} className='my-10 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5'>
                 {firedata.map((data) => {
                     return(
-                        <a key={data.id} className="glassmorph md:mx-16 mx-6 w-[18rem] lg:w-[26rem] xl:w-[35rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
+                        <a key={data.id} href={`/nightMarket/${data.id}`} className="glassmorph md:mx-16 mx-6 w-[18rem] lg:w-[26rem] xl:w-[35rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
                             <img src={data.Image} className="w-[46rem] border-solid border-slate-600 border-4 rounded-md" alt='' />
                             <h1 className='md:text-3xl text-2xl my-4 text-center'>{data.Name}</h1>
                             <h1 className='my-4 text-center md:text-xl'>${data.Price}</h1>
