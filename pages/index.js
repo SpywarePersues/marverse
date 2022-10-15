@@ -35,9 +35,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className='text-center font-marvel lg:text-6xl pt-10'>
+            <div className='text-center font-marvel lg:text-6xl py-6'>
               A collection of <span className='text-red-500'>Premium Marvel Products</span>
             </div>
+            <video autoPlay muted loop className='absolute w-screen min-screen'>
+                    <source src='./intro.mp4' />
+              </video>
             <div className='my-10'>
               <ProductsSlider></ProductsSlider>
             </div>
