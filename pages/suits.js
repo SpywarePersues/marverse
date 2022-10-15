@@ -31,7 +31,18 @@ function ironmanSuits() {
                             <img src={data.Image} className="w-[46rem] border-solid border-slate-600 border-4 rounded-md" alt='' />
                             <h1 className='md:text-3xl text-2xl my-4 text-center'>{data.Name}</h1>
                             <h1 className='my-4 text-center md:text-xl'>${data.Price}</h1>
-                            <Link href={`/checkout/suits`}><button className='my-4 button px-4 py-3 rounded-md block mx-auto'>Buy Now</button></Link>
+                            <div className='flex justify-evenly pb-5'>
+                                    <button class="inline-flex text-sm items-center justify-center p-0.5 overflow-hidden font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-700 to-red-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                        <a href={`/suits/${data.id}`} class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                            Discover
+                                        </a> 
+                                    </button>
+                                    <button class="inline-flex text-sm items-center justify-center p-0.5 overflow-hidden font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-700 to-red-500 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                        <a href={`/checkout/suits`} class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                            Buy Now
+                                        </a> 
+                                    </button>
+                                </div>
                         </a>
                     )
                 })}

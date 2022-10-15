@@ -1,8 +1,9 @@
-import React, { useRef as UseRef, useState as UseState } from 'react'
+import React, { useRef as UseRef, useState as UseState, useEffect as UseEffect } from 'react'
 import ContainerBlock from '../../components/ContainerBlock'
 import { useRouter as UseRouter } from 'next/router'
 import { database } from '../../firebaseConfig'
 import { addDoc, collection } from 'firebase/firestore'
+import Link from 'next/link'
 
 function shop() {
     const databaseRef = collection(database, "Orders")
@@ -14,6 +15,11 @@ function shop() {
     const [address, setAddress] = UseState('')
     const amount = 199999;
     const router = UseRouter()
+    const [token, setToken] = UseState("")
+
+    UseEffect(() => {
+        setToken(sessionStorage.getItem('Token'))
+    }, [])
 
     const sendData = (e) => {
     e.preventDefault();
@@ -32,6 +38,13 @@ function shop() {
     })
     }
 
+    if(!token){
+        return(
+            <ContainerBlock title="Checkout Failed">
+                <h1 className='text-4xl text-center py-20'><Link href='/login'><span className='text-red-500 underline cursor-pointer'>Login</span></Link> first to continue.</h1>
+            </ContainerBlock>
+        )
+    }
 
     return (
         <ContainerBlock title="Checkout">

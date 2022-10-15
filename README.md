@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Marverse - Webtales
 
-## Getting Started
+## Authors
 
-First, run the development server:
+- [@Supriyo Ghosh](https://github.com/SpywarePersues)
+- [@Siddharth Sharma](https://github.com/JadugarKalakaboola)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js
+- React
+- Firestore
+- Firebase Authentication
+- TailwindCSS
+- tailwind-scrollbar-hide
+- React-Icons
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Installation :wrench:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clone this repo by running `git clone https://github.com/SpywarePersues/marverse.git` or manually install the zip folder.
+2. `cd marverse`
+3. `npm install or npm install --force or npm install --legacy-peer-deps`
+4. `npm run dev`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Some Additional Details
 
-## Learn More
+**Made For:** Webtales
 
-To learn more about Next.js, take a look at the following resources:
+**Live Link:** https://marverse.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Made By:** Team INT_ELLIGENCE, Army Public School Delhi Cantt
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Credits**: None of the libraries/frameworks are made by us, All the credit goes to the authors.
 
-## Deploy on Vercel
+## Deployed using
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Vercel](https://vercel.com)
+- [Github](https://github.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## THANKS!
