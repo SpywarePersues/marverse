@@ -32,14 +32,15 @@ function infinityStones() {
                 <div className='flex flex-wrap justify-center mb-10'>
                     {firedata.map((data) => {
                         return(
-                            <div key={data.id} className="glassmorph md:mx-16 mx-6 w-[15rem] lg:w-[22rem] xl:w-[30rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
-                                <img src={data.Image} className="w-screen lg:w-[46rem] border-solid border-slate-600 border-4 rounded-md" alt='' />
+                            <div key={data.id} className="glassmorph h-8/12 md:mx-16 mx-6 w-11/12 lg:w-3/12 rounded-lg hover:scale-105 transition-scale duration-300 my-6">
+                                <img src={data.Image} className="w-screen h-full border-solid border-slate-600 border-4 rounded-md" alt='' />
                             </div>
                         )
                     })}
                 </div>
         </ContainerBlock>
     )
+    
 }
 
 export default infinityStones

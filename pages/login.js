@@ -62,20 +62,22 @@ function login() {
                 </div>
             ) : (<div><h1 className='text-5xl text-center pb-5 pt-5 wonderful-text font-semibold'>Login</h1>
             <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-14">
-            <div class="rounded overflow-hidden shadow-lg green-glassmorph">
-            <img class="w-24 block mx-auto my-auto mt-5 mb-2 rounded-full border-solid border-green-600 border-4" src="https://cdn.discordapp.com/attachments/910730837996224584/1028238445778309171/media_discordapp_net-unknown_1.png" alt="Google" />
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl text-center">Google</div>
-            </div>
-            <button className="button px-4 py-3 rounded-md mb-4 mx-auto block" onClick={signUpWithGoogle}>Use Google</button>
-            </div>
-            <div class="rounded overflow-hidden shadow-lg blue-glassmorph">
-            <img class="w-24 block mx-auto my-auto mt-5 mb-2 rounded-full border-solid border-red-800 border-4" src="https://cdn.discordapp.com/attachments/910730837996224584/1028239951688650842/unknown.png" alt="Github" />
-            <div class="px-6 py-4">
-                <div class="font-bold text-xl text-center">Github</div>
-            </div>
-            <button className="button px-4 py-3 rounded-md mb-4 mx-auto block" onClick={signUpWithGithub}>Use Github</button>
-            </div></div></div>)}
+                <div class="rounded overflow-hidden shadow-lg green-glassmorph">
+                    <img class="w-24 block mx-auto my-auto mt-5 mb-2 rounded-full border-solid border-green-600 border-4" src="https://cdn.discordapp.com/attachments/910730837996224584/1028238445778309171/media_discordapp_net-unknown_1.png" alt="Google" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl text-center">Google</div>
+                    </div>
+                        <button className="button px-4 py-3 rounded-md mb-4 mx-auto block" onClick={signUpWithGoogle}>Use Google</button>
+                    </div>
+                    <div class="rounded overflow-hidden shadow-lg blue-glassmorph">
+                        <img class="w-24 block mx-auto my-auto mt-5 mb-2 rounded-full border-solid border-red-800 border-4" src="https://cdn.discordapp.com/attachments/910730837996224584/1028239951688650842/unknown.png" alt="Github" />
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl text-center">Github</div>
+                    </div>
+                    <button className="button px-4 py-3 rounded-md mb-4 mx-auto block" onClick={signUpWithGithub}>Use Github</button>
+                    </div>
+                </div>
+            </div>)}
         </ContainerBlock>
     )
 }
